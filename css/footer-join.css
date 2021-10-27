@@ -1,0 +1,60 @@
+.footer-social-join {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  margin-left: 72px;
+}
+
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-icon-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-icon-item + .footer-icon-item {
+  margin-left: 10px;
+}
+
+.footer-icon-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon-link:hover .footer-icon-team,
+.footer-icon-link:focus .footer-icon-team {
+  fill: var(--primary-white-color);
+}
+
+.footer-icon-team {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+/*# sourceMappingURL=footer-join.css.map */

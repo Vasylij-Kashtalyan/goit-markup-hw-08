@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Порфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- Верхняя линия -->
+    <header class="header">
+        <div class="container header__container">
+          <nav class="header-nav">
+            <a class="logo" href="index.html" lang="en"> <span class="logo__webstudio"> Web</span>Studio </a>
+            
+            <ul class="header-list" >
+              <li class="header-list__item">
+                <a class="header-list__link" href="index.html">Студия</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link current" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+    
+            
+            <ul class="header-list-info">
+              <li class="header-list-info__item">
+                
+                  <a class="info-title" href="mailto:info@devstudio.com">
+                    <svg class="info-title__icon" width="16" height="12">
+                      <use href="./images/icons.svg.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+              </li>
+              <li class="header-list-info__item">
+    
+                  <a class="info-title" href="tel:+380961111111">
+                    <svg class="info-title__icon" width="10" height="16">
+                      <use href="./images/icons.svg.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+              </li>
+            </ul>
+            
+        </div>
+      </header>
+<main>
+    <!-- Портфолио -->
+ <section class="section">
+   
+   <div class="container">
+    <h1 class="visually-hidden">Проекты</h1>
+            
+            <!-- Фильтры -->
+
+            <ul class="filters">
+                <li class="filters__item"><button class="filters__button" type="button">Все</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Веб-сайты</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Приложения</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Дизайн</button></li>
+                <li class="filters__item"><button class="filters__button" type="button">Маркетинг</button></li>
+            </ul>
+            
+            
+        
+        <!-- Проекты -->
+        
+        <ul class="project">
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+
+                    <div class="project-link__container">
+                    <img src="./images/project1.jpg" alt="Ноутбук" width="370" height="294"> 
+                        
+                    <div class="overley-project">
+                        <p class="overley-project__project-link-text">
+                            Hello
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="project-container">
+                        <h2 class="project-container__title">Технокряк</h2>
+                        <p class="project-container__text">Веб-сайт</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img class="project-img" src="./images/project2.jpg" alt="Два баскетболиста" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-container">
+                        <h2 class="project-container__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="project-container__text">Дизайн</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img src="./images/project3.jpg" alt="Силуэт рыбы" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-container">
+                        <h2 class="project-container__title">Ресторан Seafood</h2>
+                        <p class="project-container__text">Приложение</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                    <img src="./images/project4.jpg" alt="Наушники" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-container">
+                        <h2 class="project-container__title">Проект Prime</h2>
+                        <p class="project-container__text">Маркетинг</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img src="./images/project5.jpg" alt="Две коробки" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-container">
+                        <h2 class="project-container__title">Проект Boxes</h2>
+                        <p class="project-container__text">Приложение</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img src="./images/project6.jpg" alt="Ноутбук" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <div class="project-container">
+                        <h2 class="project-container__title">Inspiration has no Borders</h2>
+                        <p class="project-container__text">Веб-сайт</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img src="./images/project7.jpg" alt="Розгорнутая книга" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-container">
+                        <h2 class="project-container__title">Издание Limited Edition</h2>
+                        <p class="project-container__text">Дизайн</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img src="./images/project8.jpg" alt="Лейба" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <div class="project-container">
+                        <h2 class="project-container__title">Проект LAB</h2>
+                        <p class="project-container__text">Маркетинг</p>
+                    </div>
+                </a>
+
+            </li>
+
+            <li class="project__item">
+
+                <a class="project-link" href="">
+                    <div class="project-link__container">
+                        <img src="./images/project9.jpg" alt="Поиск сайта" width="370" height="294">
+                    
+                        <div class="overley-project">
+                            <p class="overley-project__project-link-text">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-container">
+                        <h2 class="project-container__title">Growing Business</h2>
+                        <p class="project-container__text">Приложение</p>
+                    </div>
+                </a>
+
+            </li>
+       
+        </ul>
+
+    </div>
+
+    </section>
+</main>
+    <!-- Футер -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+    
+          <div class="footer-address">
+            <a class="logo" href="index.html" lang="en"><span class="logo__webstudio">Web</span><span class="logo__web">Studio</span> </a>
+            
+              <address class="address-container">
+                <ul class="">  
+    
+                  <li class="address-item">
+                    <a class="address-item__map" href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a> 
+                  </li>
+    
+                  <li class="address-item">
+                    <a class="address-item__footer-info-title" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+    
+                  <li class="address-item">
+                    <a class="address-item__footer-info-title" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+    
+                </ul>
+              </address>
+           </div>
+              
+           
+    <!-- Присоединайтесь -->
+            <div class="footer-social">
+              <em class="footer-social-join">
+                Присоединайтесь
+              </em>
+    
+              <ul class="footer-social-icon">
+    
+                <li class="footer-social-icon__footer-icon-item">
+    
+                  <a href="" class="footer-icon-link">
+                    <svg class="footer-icon-link__footer-icon-team" width="20" >
+                      <use href="./images/icons.svg.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+              
+                <li class="footer-social-icon__footer-icon-item">
+    
+                  <a href="" class="footer-icon-link">
+                    <svg class="footer-icon-link__footer-icon-team" width="20" >
+                      <use href="./images/icons.svg.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+              
+                <li class="footer-social-icon__footer-icon-item">
+    
+                  <a href="" class="footer-icon-link">
+                    <svg class="footer-icon-link__footer-icon-team" width="20" >
+                      <use href="./images/icons.svg.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+              
+                <li class="footer-social-icon__footer-icon-item">
+    
+                  <a href="" class="footer-icon-link">
+                    <svg class="footer-icon-link__footer-icon-team" width="20" >
+                      <use href="./images/icons.svg.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+    
+                </li>
+    
+              </ul>
+            </div>
+    <!-- Подпишитесь на рассылку -->
+              <form class="footer-subscription">
+                  <em class="footer-input-join">Подпишитесь на рассылку</em>
+    
+                <div class="form-footer">
+                  <input class="form-footer__footer-input" type="email" placeholder="E-mail">
+    
+                  <button class="button form-footer__input-button" type="submit">
+                    Подписаться
+                    <svg class="button__footer-input-icon" width="24" height="24">
+                      <use href="./images/icons.svg.svg#icon-telegram"></use>
+                    </svg>
+                  </button>
+                
+                </div>
+              </form>
+             
+        </div>
+      </footer>
+</body>
+
+</html>

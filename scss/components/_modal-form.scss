@@ -1,0 +1,28 @@
+  .modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  .modal-form {
+    position: absolute;
+    width: 100%;
+    padding: 40px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.03em;
+    
+      color: var(--link-text-color);
+    }
+
+    &__container {
+      margin-top: 11px;
+    }
+  }
