@@ -9,11 +9,11 @@
     clip: rect(0 0 0 0);
   }
   .container {
-    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 
+   
     @media screen and (min-width: 480px) {
       width: 480px;
     }
@@ -29,7 +29,7 @@
     padding-bottom: 94px;
 
     @media screen and (min-width: 480px) {
-      padding-top: 60px;
+    padding-top: 60px;
     padding-bottom: 60px;
     }
   }
