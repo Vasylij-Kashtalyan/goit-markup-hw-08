@@ -1,7 +1,11 @@
-.section-works {
-    padding-top: 0;
-  }
 .works {
+    padding-top: 0;
+
+    @media screen and (max-width: 1199px) {
+      visibility: hidden;
+    }
+  }
+.works__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -12,7 +16,7 @@
     margin-bottom: 50px;
   }
 
-.works-items {
+.works__set {
     display: flex;
   }
 

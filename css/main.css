@@ -381,11 +381,17 @@ a {
   height: 70px;
 }
 
-.section-works {
+.works {
   padding-top: 0;
 }
 
-.works {
+@media screen and (max-width: 1199px) {
+  .works {
+    visibility: hidden;
+  }
+}
+
+.works__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -395,7 +401,7 @@ a {
   margin-bottom: 50px;
 }
 
-.works-items {
+.works__set {
   display: flex;
 }
 
