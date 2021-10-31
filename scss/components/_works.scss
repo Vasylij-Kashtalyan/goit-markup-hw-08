@@ -2,8 +2,9 @@
     padding-top: 0;
 
     @media screen and (max-width: 1199px) {
-      visibility: hidden;
+      display: none;
     }
+    
   }
 .works__title {
     font-weight: 700;
@@ -18,6 +19,7 @@
 
 .works__set {
     display: flex;
+    justify-content: center;
   }
 
 .works__item {
