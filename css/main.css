@@ -91,19 +91,27 @@ a {
 }
 
 .header {
+  position: relative;
   max-width: 1600px;
   margin: auto;
   border: 1px solid #ececec;
 }
 
 .header__container {
-  display: flex;
   align-items: center;
 }
 
-.header-nav {
+@media screen and (min-width: 767px) {
+  .header__container {
+    display: flex;
+  }
+}
+
+.header__container .header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
 }
 
 .logo {
@@ -119,9 +127,14 @@ a {
   display: flex;
 }
 
-.header-list__item:not(:last-child),
-.header-list-info__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+}
+
+.header-list__item + .header-list__item {
+  margin-left: 50px;
 }
 
 .header-list__link {
@@ -159,18 +172,28 @@ a {
   color: var(--accent-color);
 }
 
-.header-list-info {
+.header-info {
   display: flex;
   margin-left: auto;
   justify-content: center;
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header-info {
+    display: none;
+  }
+}
+
 .logo__webstudio {
   color: var(--accent-color);
 }
 
-.info-title {
+.header-info__item + .header-info__item {
+  margin-left: 50px;
+}
+
+.header-info__link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -183,11 +206,11 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info-title:hover, .info-title:focus {
+.header-info__link:hover, .header-info__link:focus {
   color: var(--accent-color);
 }
 
-.info-title__icon {
+.header-info__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,9 +219,90 @@ a {
   fill: var(--primary-text-color);
 }
 
-.info-title:hover .info-title__icon,
-.info-title:focus .info-title__icon {
+.header-info__link:hover .header-info__icon,
+.header-info__link:focus .header-info__icon {
   fill: var(--accent-color);
+}
+
+.menu-btn {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn .menu-btn__close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
+}
+
+.menu-box {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: palegoldenrod;
+}
+
+.menu-boxis-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-box.is-open {
+    display: block;
+  }
+}
+
+.menu-list {
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
+.menu-list__item + .menu-list__item {
+  margin-top: 32px;
+}
+
+.menu-list__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.active {
+  color: var(--accent-color);
 }
 
 .studio {
@@ -228,7 +332,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    width: 100%;
   }
 }
 
