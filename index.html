@@ -27,30 +27,66 @@
       <nav class="header-nav">
         <a class="logo" href="index.html" lang="en"> <span class="logo__webstudio"> Web</span>Studio </a>
         
-        <button class="menu-btn" type="button" is-open data-menu-button>
+        <button class="menu-btn" type="button" 
+        data-menu-button
+        aria-expanded="false"
+        aria-controls="mob-menu"
+        >
           <svg width="40" height="40">
             <use class="menu-btn__close"  href="./images/icons.svg.svg#menu-close"></use>
             <use class="menu-btn__menu" href="./images/icons.svg.svg#icon-menu"></use>
-            
           </svg>
 
         </button>
         
-        <div class="menu-box" data-menu>
-          <ul class="menu-list" >
+        <div class="mob-menu" id="mob-menu" data-menu>
 
-            <li class="menu-list__item">
-              <a class="menu-list__link active" href="index.html">Студия</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="">Контакты</a>
-            </li>
-  
+          <ul class="mob-menu__list" >
+
+              <li class="mob-menu__item">
+                <a class="mob-menu__link active" href="index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Контакты</a>
+              </li>
+
           </ul>
+
+          <ul class="menu-info">
+
+              <li class="menu-info__item">
+                <a class="menu-info__link menu-info_tel" href="tel:+380961111111">                 
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="menu-info__item">            
+                  <a class="menu-info__link" href="mailto:info@devstudio.com">                 
+                    info@devstudio.com
+                  </a>
+              </li> 
+          </ul>
+
+          <ul class="menu-social">
+
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Instagram</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link href=">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link href=">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link href=">LinkedIn</a>
+              </li>
+          </ul>
+
         </div>
+
         <ul class="header-list" >
 
           <li class="header-list__item">
@@ -63,9 +99,7 @@
             <a class="header-list__link" href="">Контакты</a>
           </li>
 
-        </ul>
-
-        
+        </ul>       
       </nav>
 
         <ul class="header-info">
@@ -434,57 +468,59 @@
     </section>
 
     <!-- Постоянные клиенты -->
-    <!-- <section class="customers section">
+
+    <section class="section">
+
       <div class="container">
 
-        <h2 class="customers-title">
+        <h2 class="customers">
           Постоянные клиенты
         </h2>
 
-        <ul class="customers-items">
-          <li class="customers-items__customers-item">
-            <a href="" class="customers-link">
-              <svg class="customers-link__icon-customers" >
+        <ul class="customers-set">
+          <li class="customers-set__item">
+            <a href="" class="customers-set__link">
+              <svg class="customers-set__icon" >
                 <use href="./images/icons.svg.svg#icon-logoclients1"></use>
               </svg>
             </a>
           </li>
 
-          <li class="customers-items__customers-item">
-            <a href="" class="customers-link">
-              <svg class="customers-link__icon-customers">
+          <li class="customers-set__item">
+            <a href="" class="customers-set__link">
+              <svg class="customers-set__icon">
                 <use href="./images/icons.svg.svg#icon-logoclients2"></use>
               </svg>
             </a>
           </li>
 
-          <li class="customers-items__customers-item">
-            <a href="" class="customers-link">
-              <svg class="customers-link__icon-customers">
+          <li class="customers-set__item">
+            <a href="" class="customers-set__link">
+              <svg class="customers-set__icon">
                 <use href="./images/icons.svg.svg#icon-logoclients3"></use>
               </svg>
             </a>
           </li>
 
-          <li class="customers-items__customers-item">
-            <a href="" class="customers-link">
-              <svg class="customers-link__icon-customers">
+          <li class="customers-set__item">
+            <a href="" class="customers-set__link">
+              <svg class="customers-set__icon">
                 <use href="./images/icons.svg.svg#icon-logoclients4"></use>
               </svg>
             </a>
           </li>
 
-          <li class="customers-items__customers-item">
-            <a href="" class="customers-link">
-              <svg class="customers-link__icon-customers">
+          <li class="customers-set__item">
+            <a href="" class="customers-set__link">
+              <svg class="customers-set__icon">
                 <use href="./images/icons.svg.svg#icon-logoclients5"></use>
               </svg>
             </a>
           </li>
 
-          <li class="customers-items__customers-item">
-            <a href="" class="customers-link">
-              <svg class="customers-link__icon-customers">
+          <li class="customers-set__item">
+            <a href="" class="customers-set__link">
+              <svg class="customers-set__icon">
                 <use href="./images/icons.svg.svg#icon-logoclients6"></use>
               </svg>
             </a>
@@ -494,10 +530,12 @@
 
 
       </div>
-    </section> -->
+    </section>
   </main>
   <!-- Футер -->
-  <!-- <footer class="footer">
+
+  <footer class="footer">
+    <div>
 
     <div class="container footer-container">
 
@@ -524,7 +562,7 @@
        </div>
           
        
-          <!-Присоединайтесь->
+          <!-- Присоединайтесь -->
 
          <div class="footer-social">
           <em class="footer-social-join">
@@ -574,9 +612,11 @@
             </li>
 
           </ul>
-        </div> -->
+        </div> 
+      </div>
 <!-- Подпишитесь на рассылку -->
-          <!-- <form class="footer-subscription">
+
+          <form class="footer-subscription">
               <em class="footer-input-join">Подпишитесь на рассылку</em>
 
             <div class="form-footer">
@@ -593,7 +633,7 @@
           </form>
          
     </div>
-  </footer>  --> -->
+  </footer> 
 
  <!-- Модальное окно -->
  

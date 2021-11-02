@@ -19,47 +19,111 @@
 <body>
     <!-- Верхняя линия -->
     <header class="header">
-        <div class="container header__container">
-          <nav class="header-nav">
-            <a class="logo" href="index.html" lang="en"> <span class="logo__webstudio"> Web</span>Studio </a>
-            
-            <ul class="header-list" >
-              <li class="header-list__item">
-                <a class="header-list__link" href="index.html">Студия</a>
-              </li>
-              <li class="header-list__item">
-                <a class="header-list__link current" href="portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-list__item">
-                <a class="header-list__link" href="">Контакты</a>
-              </li>
+
+      <div class="container header__container">
+        <nav class="header-nav">
+          <a class="logo" href="index.html" lang="en"> <span class="logo__webstudio"> Web</span>Studio </a>
+          
+          <button class="menu-btn" type="button" 
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mob-menu"
+          >
+            <svg width="40" height="40">
+              <use class="menu-btn__close"  href="./images/icons.svg.svg#menu-close"></use>
+              <use class="menu-btn__menu" href="./images/icons.svg.svg#icon-menu"></use>
+            </svg>
+  
+          </button>
+          
+          <div class="mob-menu" id="mob-menu" data-menu>
+  
+            <ul class="mob-menu__list" >
+  
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link " href="index.html">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link active" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="">Контакты</a>
+                </li>
+  
             </ul>
-          </nav>
-    
-            
-            <ul class="header-list-info">
-              <li class="header-list-info__item">
-                
-                  <a class="info-title" href="mailto:info@devstudio.com">
-                    <svg class="info-title__icon" width="16" height="12">
-                      <use href="./images/icons.svg.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-              </li>
-              <li class="header-list-info__item">
-    
-                  <a class="info-title" href="tel:+380961111111">
-                    <svg class="info-title__icon" width="10" height="16">
-                      <use href="./images/icons.svg.svg#icon-smartphone"></use>
-                    </svg>
+  
+            <ul class="menu-info">
+  
+                <li class="menu-info__item">
+                  <a class="menu-info__link menu-info_tel" href="tel:+380961111111">                 
                     +38 096 111 11 11
                   </a>
-              </li>
+                </li>
+                <li class="menu-info__item">            
+                    <a class="menu-info__link" href="mailto:info@devstudio.com">                 
+                      info@devstudio.com
+                    </a>
+                </li> 
             </ul>
-            
-        </div>
-      </header>
+  
+            <ul class="menu-social">
+  
+                <li class="menu-social__item">
+                  <a class="menu-social__link" href="">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                  <a class="menu-social__link href=">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                  <a class="menu-social__link href=">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                  <a class="menu-social__link href=">LinkedIn</a>
+                </li>
+            </ul>
+  
+          </div>
+  
+          <ul class="header-list" >
+  
+            <li class="header-list__item">
+              <a class="header-list__link" href="index.html">Студия</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link current" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="">Контакты</a>
+            </li>
+  
+          </ul>       
+        </nav>
+  
+          <ul class="header-info">
+            <li class="header-info__item">
+              
+                <a class="header-info__link" href="mailto:info@devstudio.com">
+                  <svg class="header-info__icon" width="16" height="12">
+                    <use href="./images/icons.svg.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+  
+            </li>
+  
+            <li class="header-info__item">
+  
+                <a class="header-info__link" href="tel:+380961111111">
+                  <svg class="header-info__icon" width="10" height="16">
+                    <use href="./images/icons.svg.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+            </li>
+          </ul>
+          
+      </div>
+    </header>
 <main>
     <!-- Портфолио -->
  <section class="section">
@@ -376,6 +440,7 @@
              
         </div>
       </footer>
+      <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,128 @@
+.menu-btn{
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+    & .menu-btn__close {
+      display: none;
+    }
+    &.is-open .menu-btn__close {
+      display: block;
+    }
+    &.is-open .menu-btn__menu{
+      display: none;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .mob-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 796px ;
+    z-index: 2;
+  
+    background-color: var(--primary-white-color);
+   
+    &is-open {
+      display: block;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+  
+      &.is-open {
+        display: block;
+      }
+    }
+  }
+  
+  .mob-menu__list {
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+  
+  .mob-menu__item{
+    & + & {
+    margin-top: 32px;
+    }
+  }
+  
+  .mob-menu__link{
+      font-family: Roboto;
+      text-align: center;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+    
+      color: #212121;
+    }
+  
+  .active{
+    color: var(--accent-color);
+  }
+  
+  .menu-info {
+    margin-top: 306px;
+  }
+  .menu-info__item {
+    padding-left: 40px;
+    & + & {
+    margin-top: 32px;
+    }
+  }
+  .menu-info__link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  
+    color: var(--primary-text-color);
+  }
+  
+  .menu-info_tel{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-color);
+  }
+  .menu-social{
+    display: flex;
+    margin-top: 64px;
+    justify-content: center;
+  }
+  .menu-social__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-color);
+  }
+  .menu-social__item:not(:last-child).menu-social__item::after{
+    content: "";
+    margin: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
