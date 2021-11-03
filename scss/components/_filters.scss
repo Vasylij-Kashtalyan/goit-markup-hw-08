@@ -22,10 +22,17 @@
   
   
   .filters {
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    
 
     &__item {
+      @media screen and (max-width: 767px) {
+        margin-top: 15px;
+      }
       margin-right: 8px;
     }
 

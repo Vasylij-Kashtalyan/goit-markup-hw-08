@@ -209,7 +209,20 @@
           <li class="works__item">
 
             <div class="works-item__container">
-              <img src="./images/img1.jpg" alt="Схема" width="370" height="294">
+              <picture>
+                  <source  
+                      srcset="
+                      ./images/scheme.jpg    1x,
+                      ./images/scheme2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)">
+                  
+                  <img src="./images/scheme.jpg" 
+                  alt="Схема" 
+                  width="370" 
+                  height="294">
+              </picture>
+              
               <p class="works-item__text">
                 Десктопные приложения
               </p>
@@ -220,7 +233,21 @@
           <li class="works__item">
 
             <div class="works-item__container">
-              <img src="./images/img2.jpg" alt="Список дизайна" width="370" height="294">
+              <picture>
+                <source  
+                    srcset="
+                    ./images/design.jpg    1x,
+                    ./images/design-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              >
+                
+              <img src="./images/design.jpg" 
+                alt="Список дизайна" 
+                width="370" 
+                height="294">
+          </picture>
+              
               <p class="works-item__text">
                 Мобильные приложения
               </p>
@@ -231,7 +258,20 @@
           <li class="works__item">
 
             <div class="works-item__container">
-              <img src="./images/img3.jpg" alt="Фигура">
+              <picture>
+                  <source  
+                      srcset="
+                      ./images/figure.jpg    1x,
+                      ./images/figure2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                >
+                  
+                <img src="./images/figure.jpg" 
+                alt="Фигура" 
+                width="370"
+                height="294">
+            </picture>
               <p class="works-item__text">
                 Дизайнерские решения
               </p>
@@ -255,8 +295,35 @@
         <ul class="team-set">
 
           <li class="team-set__item">
-            <img src="./images/igor.jpg" alt="член команды" width="270" height="260">
-              
+            <picture>
+              <source  
+                srcset="
+                ./images/igor.jpg    1x,
+                ./images/igor2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            >
+              <source
+                srcset="
+                    ./images/img_tab/igor-tab.jpg    1x,
+                    ./images/img_tab/igor-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+            />
+            <source
+            srcset="
+                ./images/img_mob/igor-mob.jpg    1x,
+                ./images/img_mob/igor-mob2x.jpg 2x
+            "
+            media="(min-width: 480px)"
+        />
+
+            <img src="./images/igor.jpg" 
+            alt="член команды" 
+            width="270" 
+            height="260">
+
+          </picture>
               <div class="team-set__box">
                 <h3 class="team-set__title">
                   Игорь Демьяненко
@@ -309,7 +376,36 @@
               </div>
           </li>
           <li class="team-set__item">
-            <img src="./images/olga.jpg" alt="член команды" width="270" height="260">
+            <picture>
+              <source  
+                srcset="
+                ./images/olga.jpg    1x,
+                ./images/olga2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            >
+              <source
+                srcset="
+                    ./images/img_tab/olga-tab.jpg    1x,
+                    ./images/img_tab/olga-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+            />
+            <source
+            srcset="
+                ./images/img_mob/olga-mob.jpg    1x,
+                ./images/img_mob/olga-mob2x.jpg 2x
+            "
+            media="(min-width: 480px)"
+        />
+
+            <img src="./images/olga.jpg" 
+            alt="член команды" 
+            width="270" 
+            height="260">
+
+          </picture>
+            
               
               <div class="team-set__box">
                 <h3 class="team-set__title">
@@ -364,8 +460,37 @@
               </div>
           </li>
           <li class="team-set__item">
-            <img src="./images/kolya.jpg" alt="член команды" width="270" height="260">
-              
+            <picture>
+              <source  
+                srcset="
+                ./images/kolya.jpg    1x,
+                ./images/kolya2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            >
+              <source
+                srcset="
+                    ./images/img_tab/kolya-tab.jpg    1x,
+                    ./images/img_tab/kolya-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+            />
+            <source
+            srcset="
+                ./images/img_mob/kolya-mob.jpg    1x,
+                ./images/img_mob/kolya-mob2x.jpg 2x
+            "
+            media="(min-width: 480px)"
+        />
+
+            <img src="./images/kolya.jpg" 
+            alt="член команды" 
+            width="270" 
+            height="260">
+
+
+          </picture>
+        
               <div class="team-set__box">
                 <h3 class="team-set__title">
                   Николай Тарасов
@@ -418,7 +543,35 @@
               </div>
           </li>
           <li class="team-set__item">
-            <img src="./images/misha.jpg" alt="член команды" width="270" height="260">
+            <picture>
+              <source  
+                srcset="
+                ./images/misha.jpg    1x,
+                ./images/misha2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            >
+              <source
+                srcset="
+                    ./images/img_tab/misha-tab.jpg    1x,
+                    ./images/img_tab/misha-tab2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+            />
+            <source
+            srcset="
+                ./images/img_mob/misha-mob.jpg    1x,
+                ./images/img_mob/misha-mob2x.jpg 2x
+            "
+            media="(min-width: 480px)"
+        />
+
+            <img src="./images/misha.jpg" 
+            alt="член команды" 
+            width="270" 
+            height="260">
+
+          </picture>
               
               <div class="team-set__box">
                 <h3 class="team-set__title">
@@ -535,84 +688,84 @@
   <!-- Футер -->
 
   <footer class="footer">
-    <div>
+    <div class="footer_box">
 
-    <div class="container footer-container">
+      <div class="container footer-container">
 
-      <div class="footer-address">
-        <a class="logo" href="index.html" lang="en"><span class="logo__webstudio">Web</span><span class="logo__web">Studio</span> </a>
+        <div class="footer-address">
+          <a class="logo" href="index.html" lang="en"><span class="logo__webstudio">Web</span><span class="logo__web">Studio</span> </a>
+          
+            <address class="address-container">
+              <ul class="">  
+
+                <li class="address-item">
+                  <a class="address-item__map" href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a> 
+                </li>
+
+                <li class="address-item">
+                  <a class="address-item__footer-info-title" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+
+                <li class="address-item">
+                  <a class="address-item__footer-info-title" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+
+              </ul>
+            </address>
+        </div>
+            
         
-          <address class="address-container">
-            <ul class="">  
+            <!-- Присоединайтесь -->
 
-              <li class="address-item">
-                <a class="address-item__map" href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a> 
+          <div class="footer-social">
+            <em class="footer-social-join">
+              Присоединайтесь
+            </em>
+
+            <ul class="footer-social-icon">
+
+              <li class="footer-social-icon__footer-icon-item">
+
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon-link__footer-icon-team" width="20" >
+                    <use href="./images/icons.svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+
               </li>
+            
+              <li class="footer-social-icon__footer-icon-item">
 
-              <li class="address-item">
-                <a class="address-item__footer-info-title" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon-link__footer-icon-team" width="20" >
+                    <use href="./images/icons.svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+
               </li>
+            
+              <li class="footer-social-icon__footer-icon-item">
 
-              <li class="address-item">
-                <a class="address-item__footer-info-title" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon-link__footer-icon-team" width="20" >
+                    <use href="./images/icons.svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+
+              </li>
+            
+              <li class="footer-social-icon__footer-icon-item">
+
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon-link__footer-icon-team" width="20" >
+                    <use href="./images/icons.svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+
               </li>
 
             </ul>
-          </address>
-       </div>
-          
-       
-          <!-- Присоединайтесь -->
-
-         <div class="footer-social">
-          <em class="footer-social-join">
-            Присоединайтесь
-          </em>
-
-          <ul class="footer-social-icon">
-
-            <li class="footer-social-icon__footer-icon-item">
-
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon-link__footer-icon-team" width="20" >
-                  <use href="./images/icons.svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-
-            </li>
-          
-            <li class="footer-social-icon__footer-icon-item">
-
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon-link__footer-icon-team" width="20" >
-                  <use href="./images/icons.svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-
-            </li>
-          
-            <li class="footer-social-icon__footer-icon-item">
-
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon-link__footer-icon-team" width="20" >
-                  <use href="./images/icons.svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-
-            </li>
-          
-            <li class="footer-social-icon__footer-icon-item">
-
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon-link__footer-icon-team" width="20" >
-                  <use href="./images/icons.svg.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-
-            </li>
-
-          </ul>
-        </div> 
+          </div> 
       </div>
 <!-- Подпишитесь на рассылку -->
 

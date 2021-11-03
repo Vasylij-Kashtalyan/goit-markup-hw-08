@@ -1,7 +1,4 @@
 .footer-social-join {
-  @media screen  and (max-width: 1199px) {
-    display: flex; 
-  } 
     justify-content: center;
     font-style: normal;
     text-transform: uppercase;
@@ -14,26 +11,27 @@
   }
 
   .footer-container {
+    align-items: baseline;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       justify-content: space-between;
     }
-    
-    align-items: baseline;
   }
-
   .footer-social {
     @media screen and (min-width: 1200px) {
     width: 206px;
     margin-left: 72px;
    }
    @media screen and (max-width: 1199px) {
+    text-align: center;
     margin-bottom: 60px;
-   }
-    
-    
+   } 
   }
-
   .footer-social-icon {
     display: flex;
     justify-content: center;
