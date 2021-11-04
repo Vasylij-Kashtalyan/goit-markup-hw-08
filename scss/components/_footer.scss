@@ -16,12 +16,16 @@
     }
 
   }
-.footer_box{
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
+  .footer-wraper{
+    @media screen and (min-width: 767px) {
+     display: flex;
+     justify-content: space-around;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+     }
   }
-}
+
   .logo__web {
     color: var(--primary-white-color);
   }

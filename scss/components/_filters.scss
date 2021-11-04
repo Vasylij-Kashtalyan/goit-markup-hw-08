@@ -30,10 +30,20 @@
     
 
     &__item {
-      @media screen and (max-width: 767px) {
-        margin-top: 15px;
-      }
-      margin-right: 8px;
+    
+        &:not(:last-child){
+          @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+          } 
+        }
+        &:nth-child(4){
+          @media screen and (max-width: 767px) {
+            margin-bottom: 0;
+          } 
+        }
+
+    
+    margin-right: 8px;
     }
 
     &__item:last-child {
