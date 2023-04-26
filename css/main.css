@@ -364,7 +364,7 @@ a {
   color: var(--accent-color);
 }
 
-.menu-social__item:not(:last-child).menu-social__item::after {
+.menu-social__item:not(:last-child)::after {
   content: "";
   margin: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
